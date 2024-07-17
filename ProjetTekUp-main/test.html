@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout de Produit</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="image/logo1.avif" alt="logo"></ion-icon> </span>
+                        <span class="title" style="font-size: 1.4rem;">Alisa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon> </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="test.html">
+                        <span class="icon"><ion-icon name="bag-add-outline"></ion-icon> </span>
+                        <span class="title">Add Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list.html">
+                        <span class="icon"><ion-icon name="shirt-outline"></ion-icon></span>
+                        <span class="title">All Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="information-outline"></ion-icon> </span>
+                        <span class="title">Helps</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon> </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+    
+    
+    
+    </div>
+    
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
+
+            <div class="search">
+                <label >
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+
+                </label>
+            </div>
+            
+
+          
+            <div class="user">
+                
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+
+        </div>
+
+  <div class="add">
+    <div class="container">
+        <h1>Ajout de Produit</h1>
+        <form action="traitement.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nom">Nom du produit:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prix">Prix:</label>
+                <input type="number" id="prix" name="prix"  required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image"  required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Ajouter Produit</button>
+            </div>
+        </form>
+    </div>
+
+  </div> 
+  
+
+
+  <script src="assets/js/main.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+    </body>
+</html>
